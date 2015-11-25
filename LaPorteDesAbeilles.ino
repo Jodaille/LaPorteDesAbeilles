@@ -28,5 +28,7 @@ void setup() {
 void loop() {
   // le code sera répété tant que les ressources
   // en électricité et mémoire seront disponibles
+  Serial.print("A0 = ");
+  Serial.println(analogRead(A0));
 
 }
