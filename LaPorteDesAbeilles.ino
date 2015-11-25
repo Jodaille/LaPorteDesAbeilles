@@ -9,6 +9,9 @@ void setup() {
 
   // Nous activons la liaison série
   Serial.begin(9600);
+
+  // Nous émettons un message :
+  Serial.println("Hello world !");
 }
 
 /*
