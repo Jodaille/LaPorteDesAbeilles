@@ -12,6 +12,11 @@ void setup() {
 
   // Nous émettons un message :
   Serial.println("Hello world !");
+
+  Serial.println("A0 a pour valeur:");
+  Serial.println(analogRead(A0));
+
+  
 }
 
 /*
