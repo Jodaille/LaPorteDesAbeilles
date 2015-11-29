@@ -36,8 +36,13 @@ void setup() {
   // Nous émettons un message :
   Serial.println("Starting setup");
 
+  // nous stockons la valeur du capteur
   reflexion1 = analogRead(passageA);
+
+  // nous affichons notre message
   Serial.println("A0/passageA a pour valeur:");
+
+  // nous affichons notre variable
   Serial.println(reflexion1);
 
 
@@ -52,7 +57,16 @@ void setup() {
 void loop() {
   // le code sera répété tant que les ressources
   // en électricité et mémoire seront disponibles
-  Serial.print("A0 = ");
-  Serial.println(analogRead(passageA));
+
+  // nous stockons la valeur du capteur
+  reflexion1 = analogRead(passageA);
+
+  // Nous affichons la valeur si elle dépasse notre seuil
+  if(reflexion1 > seuilA)
+  {
+    Serial.print("A0 = ");
+    Serial.println(analogRead(passageA));
+  }
+
 
 }
