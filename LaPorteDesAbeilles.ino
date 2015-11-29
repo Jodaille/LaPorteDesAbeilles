@@ -50,7 +50,8 @@ void setup() {
   // nous affichons notre variable
   Serial.println(reflexion1);
 
-
+  // nous utiliserons detectionLED en sortie
+  pinMode(detectionLED, OUTPUT);
 }
 
 /*
