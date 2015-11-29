@@ -22,6 +22,11 @@ int reflexion1;
 int seuilA = 200;
 
 /*
+ * pin de la LED intégrée à la carte Arduino
+ */
+const int detectionLED = 13;
+
+/*
 * La fonction setup() est appelée
 * au démarrage d'Arduino
 */
