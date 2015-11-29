@@ -72,6 +72,11 @@ void loop() {
   {
     Serial.print("A0 = ");
     Serial.println(analogRead(passageA));
+    digitalWrite(detectionLED, HIGH);
+  }
+  else
+  {
+    digitalWrite(detectionLED, LOW);
   }
 
 
