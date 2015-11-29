@@ -14,6 +14,14 @@ const int passageA = A0;
 int reflexion1;
 
 /*
+ * seuilA est notre valeur de référence,
+ * au delà de cette valeur nous pourrons
+ * penser que quelque chose est devant 
+ * le capteur
+ */
+int seuilA = 0;
+
+/*
 * La fonction setup() est appelée
 * au démarrage d'Arduino
 */
