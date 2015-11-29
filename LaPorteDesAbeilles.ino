@@ -19,7 +19,7 @@ int reflexion1;
  * penser que quelque chose est devant 
  * le capteur
  */
-int seuilA = 0;
+int seuilA = 200;
 
 /*
 * La fonction setup() est appelée
